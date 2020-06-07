@@ -1,0 +1,60 @@
+.codepic {
+  width: 200px;
+}
+
+.picdiv {
+  margin: 0 10px;
+  animation: bounce 2s ease-in 1;
+}
+
+
+
+.skills-container {
+  margin: 0 auto;
+  max-width: 750px;
+  font-family: 'Raleway'
+}
+
+.front-banner {
+  background: purple;
+  width: 100%;
+  height: 100px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.skills-item {
+  margin: 15px 20px;
+  width: 150px;
+  text-align: center;
+}
+
+@keyframes bounce {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-15%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+}
+
+.fade-in-down {
+  animation: fade-in-down 2s ease 1;
+}
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
