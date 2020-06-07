@@ -14,7 +14,7 @@ module.exports.onCreateNode = ({ node, actions }) => {
   }
 }
 
-module.exports.createPages = ({ graphql, actions }) => {
+module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   // Get path to template
