@@ -1,6 +1,6 @@
 ---
 title: "Agile Mobile Development"
-date: "June 6, 2020"
+date: "2020-06-07"
 summary: "Building agile apps quick and cheap!"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Gatsby JS"
-date: "June 7, 2020"
+date: "2020-06-07"
 summary: "Easiest way to start using server side rendering."
 ---
 
