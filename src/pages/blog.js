@@ -19,6 +19,9 @@ const BlogPage = () => {
             }
             html
             excerpt
+            fields {
+              slug
+            }
           }
         }
       }
@@ -31,19 +34,21 @@ const BlogPage = () => {
       <ol className={blogStyles.blogList}>
         {data.allMarkdownRemark.edges.map((edge) => {
           return (
-            <li key={edge.node.id} className={blogStyles.blogCard}>
-              <h2>{edge.node.frontmatter.title}</h2>
-              <p>{edge.node.frontmatter.date}</p>
-              <br />
-              <p>{edge.node.frontmatter.summary}</p>
-              <br />
-              <Link className={blogStyles.arrowLink} to="/contact" ><img src={arrowright} className={blogStyles.arrow} alt="arrow"></img></Link>
-            </li>
+            <Link to={`/blog/${edge.node.fields.slug}`}>
+              <li key={edge.node.id} className={blogStyles.blogCard}>
+                <h2>{edge.node.frontmatter.title}</h2>
+                <p>{edge.node.frontmatter.date}</p>
+                <br />
+                <p>{edge.node.frontmatter.summary}</p>
+                <br />
+                <div className={blogStyles.arrowLink} to="/contact" ><img src={arrowright}
+                  className={blogStyles.arrow} alt="arrow"></img></div>
+              </li>
+            </Link>
           )
         })}
       </ol>
-
-    </Layout>
+    </Layout >
   )
 }
 

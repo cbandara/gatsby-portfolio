@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   padding: 2.5rem;
-  margin: 3rem auto;
+  margin: 3rem 2rem;
   outline-width: 0px;
   outline-color: #d6d6d6;
   -webkit-box-shadow: 10px 10px 42px -18px rgba(128,128,128,1);
@@ -19,8 +19,9 @@
 .blog-list {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  
+  flex-wrap: wrap-reverse;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .blog-card:hover {

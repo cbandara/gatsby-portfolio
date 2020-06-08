@@ -10,7 +10,7 @@ html {
   margin: 0 auto;
   padding: 2rem 2rem;
   max-width: 750px;
-  font-family: 'Raleway'
+  color: #525252;
 }
 
 .main-title {
@@ -26,17 +26,12 @@ html {
   // color: white;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 2rem;
-  padding: 5rem 0rem;
+  margin-bottom: 4rem;
 }
 
-@media only screen and (min-width: 650px) {
-  .hero {
-    padding: 8rem 0rem;
-  }
-}
+
 
 .button {
   background-color: white;
@@ -101,11 +96,12 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   text-decoration: none;
+  color: black;
 }
 a:active,
 a:hover {
   outline-width: 0;
-  color: #f58f00;
+  color: #550080;
 }
 abbr[title] {
   border-bottom: none;
@@ -123,7 +119,9 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  text-align: center;
 }
+
 mark {
   background-color: #ff0;
   color: #000;
@@ -451,7 +449,8 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  font-family: 'Raleway'
+  color: #3b3b3b;
+  line-height: 1.5rem;
 }
 figure {
   margin-left: 0;
@@ -685,6 +684,15 @@ pre tt:after {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .hero {
+    padding: 0rem 0rem;
+  }
+  h1 {
+    text-align: left;
   }
 }
 

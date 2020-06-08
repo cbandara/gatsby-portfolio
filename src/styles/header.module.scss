@@ -1,6 +1,7 @@
 
 .header {
   padding: 1rem 0 0rem;
+  padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -18,29 +19,30 @@
   display: flex;
   list-style-type: none;
   margin: 0;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .nav-item {
   color: #474747;
   font-size: 1.2rem;
-  margin-right: 0.2rem;
+  margin-right: 0rem;
   text-decoration: none;
   padding: 5px 10px;
   border: solid;
   border-color: white;
+  margin-top: 50px;
 }
 
 .nav-item:hover {
-  color: #f58f00;
+  color: #550080;
   border: solid;
   border-radius: 5px;
 }
 
 .active-nav-item {
   color: #333333;
-  text-decoration: underline;
 }
 
 @media screen and (min-width:640px) {
