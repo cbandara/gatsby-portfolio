@@ -1,11 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: 'Devin Bandara',
+    title: 'Charutha Devin Bandara',
     author: 'Charutha Bandara',
     position: 'Software Engineer'
   },
   /* Your site config here */
   plugins: [
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: 'i8u59mg9xoed',
+        accessToken: 'f-rpAl3shaOAbRM5BYS-uOmbM4fE8Zrcl-dDTWo5QjU',
+      }
+    },
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-web-font-loader',
@@ -37,6 +44,7 @@ module.exports = {
           }
         ]
       }
-    }
+    },
+
   ]
 }
