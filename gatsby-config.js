@@ -11,13 +11,6 @@ module.exports = {
   },
   /* Your site config here */
   plugins: [
-    {
-      resolve: 'gatsby-source-contentful',
-      options: {
-        spaceId: 'i8u59mg9xoed',
-        accessToken: 'f-rpAl3shaOAbRM5BYS-uOmbM4fE8Zrcl-dDTWo5QjU',
-      }
-    },
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-web-font-loader',
