@@ -3,10 +3,9 @@ title: "Building websites with Gatsby JS"
 date: "June 7th, 2020"
 summary: "A step by step guide on how to get started with Gatsby.js"
 ---
+![Gatsby JS](./../assets/gatsbypost.png)
 
 I just launched this new site using Gatsby. My portfolio was in need of a refresh as it still had projects from when I started using Javascript.
-
-![Gatsby JS](./../assets/gatsbypost.png)
 
 ## Features
 

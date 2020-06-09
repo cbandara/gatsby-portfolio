@@ -30,7 +30,7 @@ const Blog = (props) => {
   // }
   return (
     <Layout>
-      <div className="container">
+      <div >
         <div className={blogStyles.blogContainer}>
           <h1>{props.data.markdownRemark.frontmatter.title}</h1>
           <div >
