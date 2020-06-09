@@ -7,8 +7,8 @@ import aboutStyles from '../styles/about.module.scss'
 const AboutPage = () => {
   return (
     <Layout>
-      <h1>About Me</h1>
-      <div className="container">
+      <h1 className="main-title">About Me</h1>
+      <div className={aboutStyles.aboutDiv}>
         <div className={aboutStyles.bio} >
           <img width={200} src={profileimg} className={aboutStyles.profilepic} alt="Charutha Bandara"></img>
         </div>

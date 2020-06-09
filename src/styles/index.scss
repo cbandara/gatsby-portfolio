@@ -15,22 +15,26 @@ html {
 
 .main-title {
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .hero {
-  // background-image: url('../assets/hero-2.jpg');
-  margin-top: 0rem;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
-  // color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-bottom: 4rem;
 }
 
+.hero-child {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  a {
+    text-align: center;
+  }
+  margin: 0px 1.5rem;
+}
 
 
 .button {
@@ -460,7 +464,7 @@ p {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: #3b3b3b;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
 }
 figure {
   margin-left: 0;
@@ -694,6 +698,9 @@ pre tt:after {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+  h1 {
+    font-size: 1.5rem;
   }
 }
 

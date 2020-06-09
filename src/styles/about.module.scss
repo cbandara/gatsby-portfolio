@@ -9,3 +9,13 @@
   flex-direction: column;
   padding-bottom: 2.5rem;
 }
+
+.about-div {
+  padding: 0 0px;
+}
+
+@media only screen and (min-width: 650px) {
+  .about-div {
+    padding: 0 2rem;
+  }
+}

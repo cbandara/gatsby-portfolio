@@ -10,6 +10,8 @@ query($slug: String!) {
     frontmatter {
       title
       date
+      author
+      twitter
     }
     html
   }
@@ -31,7 +33,12 @@ const Blog = (props) => {
       <div className="container">
         <div className={blogStyles.blogContainer}>
           <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-          <p>{props.data.markdownRemark.frontmatter.date}</p>
+          <div >
+            <p className={blogStyles.postInfo}>{props.data.markdownRemark.frontmatter.date}</p>
+            <p className={blogStyles.postInfo}>{props.data.markdownRemark.frontmatter.author}</p>
+            <p className={blogStyles.postInfo}>{props.data.markdownRemark.frontmatter.twitter}</p>
+          </div>
+
           <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
         </div>
       </div>

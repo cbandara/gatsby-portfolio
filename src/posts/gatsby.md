@@ -1,7 +1,7 @@
 ---
-title: "Gatsby JS"
-date: "2020-06-07"
-summary: "Easiest way to start using server side rendering."
+title: "Building websites with Gatsby JS"
+date: "June 7th, 2020"
+summary: "A step by step guide on how to get started with Gatsby.js"
 ---
 
 I just launched this new site using Gatsby. My portfolio was in need of a refresh as it still had projects from when I started using Javascript.

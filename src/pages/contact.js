@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 const ContactPage = () => {
   return (
     <Layout>
-      <h1>Contact</h1>
+      <h1 className="main-title">Contact</h1>
       <div className="container contact-section">
         <a href="https://twitter.com/cbandara1010" target='blank'>
           <button className="button contact-button">Twitter</button>
