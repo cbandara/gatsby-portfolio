@@ -10,9 +10,12 @@ export const query = graphql`
     contentfulBlogPost(slug: {eq: $slug}) {
       title
       publishedDate(formatString:"MMMM Do, YYYY")
-      body {
-        json
-      }
+      content {
+          content
+          childMarkdownRemark{
+            rawMarkdownBody
+          }
+        }
     }
   }
 `
@@ -21,7 +24,7 @@ const Blog = (props) => {
   const options = {
     renderNode: {
       "embedded-asset-block": (node) => {
-        const alt = node.data.target.fields.title['en-US']
+        const alt = node.data.target.fields.ide
         const url = node.data.target.fields.file.url
         return <img alt={alt} src={url} />
       }
@@ -33,7 +36,7 @@ const Blog = (props) => {
         <div className={blogStyles.blogContainer}>
           <h1>{props.data.contentfulBlogPost.title}</h1>
           <p>{props.data.contentfulBlogPost.publishedDate}</p>
-          {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
+          <div>{props.data.contentfulBlogPost.content.childMarkdownRemark.rawMarkdownBody}</div>
         </div>
       </div>
     </Layout>
