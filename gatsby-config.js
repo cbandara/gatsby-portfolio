@@ -1,13 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Charutha Devin Bandara',
-    titleTemplate: "%s · The Real Hero",
     author: 'Charutha Bandara',
-    position: 'Software Engineer',
-    description: 'My Javascript Portfolio',
-    url: 'https://www.cbandara.com',
-    image: './../assets/profile.jpeg',
-    twitterUsername: '@cbandara1010'
+    position: 'Software Engineer'
   },
   /* Your site config here */
   plugins: [
@@ -50,6 +45,6 @@ module.exports = {
         ]
       }
     },
-    `gatsby-plugin-react-helmet`
+
   ]
 }
