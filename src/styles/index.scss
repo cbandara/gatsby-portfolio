@@ -10,33 +10,32 @@ html {
   margin: 0 auto;
   padding: 2rem 2rem;
   max-width: 750px;
-  font-family: 'Raleway'
+  color: #525252;
 }
 
 .main-title {
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .hero {
-  // background-image: url('../assets/hero-2.jpg');
-  margin-top: 0rem;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
-  // color: white;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap-reverse;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-  padding: 5rem 0rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
 }
 
-@media only screen and (min-width: 650px) {
-  .hero {
-    padding: 8rem 0rem;
+.hero-child {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  a {
+    text-align: center;
   }
+  margin: 0px 1.5rem;
 }
+
 
 .button {
   background-color: white;
@@ -56,6 +55,17 @@ html {
   color: white;
   top: 6px;
   left: 3px;
+}
+
+.contact-button {
+  margin: 20px;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 body {
@@ -101,11 +111,12 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   text-decoration: none;
+  color: black;
 }
 a:active,
 a:hover {
   outline-width: 0;
-  color: #f58f00;
+  color: #550080;
 }
 abbr[title] {
   border-bottom: none;
@@ -123,7 +134,9 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  text-align: center;
 }
+
 mark {
   background-color: #ff0;
   color: #000;
@@ -399,8 +412,8 @@ hgroup {
   margin-bottom: 1.45rem;
 }
 ul {
-  margin-left: 1.45rem;
-  margin-right: 0;
+  margin-left: 0rem;
+  margin-right: 0rem;
   margin-top: 0;
   padding-bottom: 0;
   padding-left: 0;
@@ -411,7 +424,6 @@ ul {
   list-style-image: none;
 }
 ol {
-  margin-left: 1.45rem;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
@@ -451,7 +463,8 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  font-family: 'Raleway'
+  color: #3b3b3b;
+  line-height: 1.7rem;
 }
 figure {
   margin-left: 0;
@@ -685,6 +698,18 @@ pre tt:after {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .hero {
+    padding: 0rem 0rem;
+  }
+  h1 {
+    text-align: left;
   }
 }
 

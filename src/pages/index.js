@@ -35,7 +35,7 @@ const IndexPage = () => {
       <Layout>
         <div>
           <div className="hero container">
-            <div>
+            <div className="hero-child">
               <h1 className={homeStyles.fadeInDown}>Hello.</h1>
               <h2>I'm a {data.site.siteMetadata.position}</h2>
               {/* <p>Need to get in touch?</p> */}
@@ -90,7 +90,7 @@ const IndexPage = () => {
               </li>
               <li className={homeStyles.skillsItem}>
                 <img width={100} src={gcp} alt="gcp"></img>
-                <p>Google Cloud Project</p>
+                <p>Google Cloud</p>
               </li>
               <li className={homeStyles.skillsItem}>
                 <img width={100} src={shopify} alt="shopify"></img>

@@ -1,14 +1,13 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
   siteMetadata: {
-    title: 'Devin Bandara',
+    title: 'Charutha Devin Bandara',
+    titleTemplate: "%s · Full Stack Developer",
     author: 'Charutha Bandara',
-    position: 'Software Engineer'
+    position: 'Software Engineer',
+    description: 'My Javascript Portfolio',
+    url: 'https://www.cbandara.com',
+    image: './../assets/profile.jpeg',
+    twitterUsername: '@cbandara1010'
   },
   /* Your site config here */
   plugins: [
@@ -28,7 +27,22 @@ module.exports = {
         path: `${__dirname}/src/`
       }
     },
-    'gatsby-transformer-remark',
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 780,
+              linkImagesToOriginal: false
+            }
+          }
+        ]
+      }
+    },
+    `gatsby-plugin-react-helmet`
   ]
 }
