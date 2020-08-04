@@ -15,7 +15,7 @@ const AboutPage = () => {
         <p>
           I am a full stack web developer with experience building RESTful API's, web applications
           and mobile applications. My main stack consists of Mongo,
-          Express, React and Node but I am very adaptive and pick up stacks quickly. On top of MERN, I am
+          Express, React and Node. On top of this I am very adaptive and pick up stacks quickly. On top of MERN, I am
           working with Nest.js, PostgreSQL, Ionic.js, React Native, Firebase, GCP, AWS, Docker and many other
           leading edge frameworks and libraries.
         </p>
