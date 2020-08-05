@@ -1,5 +1,5 @@
 {
-  "name": "Charutha Devin Bandara - Portfolio",
+  "name": "gatsby-starter-hello-world",
   "private": true,
   "description": "Charutha Devin Bandara - My Portfolio",
   "version": "0.1.0",
@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cbandara/gatsby-portfolio"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
