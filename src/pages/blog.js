@@ -41,8 +41,8 @@ const BlogPage = () => {
                 <br />
                 <p>{edge.node.frontmatter.summary}</p>
                 <br />
-                <div className={blogStyles.arrowLink} to="/contact" ><img src={arrowright}
-                  className={blogStyles.arrow} alt="arrow"></img></div>
+                {/* <div className={blogStyles.arrowLink} to="/contact" ><img src={arrowright}
+                  className={blogStyles.arrow} alt="arrow"></img></div> */}
               </li>
             </Link>
           )

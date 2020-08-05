@@ -16,7 +16,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Droid Sans', 'Raleway', 'Roboto']
+          families: ['Droid Sans', 'Raleway', 'Poppins']
         }
       }
     },

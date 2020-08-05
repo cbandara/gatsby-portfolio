@@ -26,6 +26,13 @@ html {
   margin-bottom: 4rem;
 }
 
+p {
+  a {
+    font-weight: bold;
+    color: #49006e;
+  }
+}
+
 .hero-child {
   display: flex;
   justify-content: center;
@@ -57,13 +64,16 @@ html {
   left: 3px;
 }
 
-.contact-button {
+.btn-container {
   margin: 20px;
+}
+.contact-button:hover {
+  cursor: pointer;
 }
 
 .contact-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -309,10 +319,10 @@ h1 {
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.1;
-  font-family: 'Raleway';
+  font-family: 'Poppins';
 }
 h2 {
-  font-family: 'Raleway';
+  font-family: 'Poppins';
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -345,7 +355,7 @@ h3 {
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
   line-height: 1.1;
-  font-family: 'Raleway'
+  font-family: 'Poppins'
 }
 h4 {
   margin-left: 0;
@@ -363,7 +373,7 @@ h4 {
   text-rendering: optimizeLegibility;
   font-size: 1rem;
   line-height: 1.1;
-  font-family: 'Raleway'
+  font-family: 'Poppins'
 }
 h5 {
   margin-left: 0;
@@ -381,7 +391,7 @@ h5 {
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
   line-height: 1.1;
-  font-family: 'Raleway'
+  font-family: 'Poppins'
 }
 h6 {
   margin-left: 0;
@@ -399,7 +409,7 @@ h6 {
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
   line-height: 1.1;
-  font-family: 'Raleway'
+  font-family: 'Poppins'
 }
 hgroup {
   margin-left: 0;
